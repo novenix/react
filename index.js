@@ -10,6 +10,7 @@ import {render} from 'react-dom'
 import Playlist from './src/playlist/componentes/playlist.js'
 //importar los datos de los videos, para lectura desde json(objetos)
 import data from './src/api.json'
+import Categorias from './src/categorias/categorias'
 // importar html
 const app=document.getElementById('app')
 //crear lugar de dom en el html el id llamarlo en 
@@ -24,3 +25,4 @@ const app=document.getElementById('app')
 //render(<Media type="video" title='Mi Primer video Nove-video' author="Nicolas Torres" image="./images/covers/logo-og.png" btonTxt="entrar"/>,app)
 //ir a componente que tenga media con toda la playlist y renderize
 render(<Playlist data={data}/>,app)
+// render(<Categorias data={data}/>,app)

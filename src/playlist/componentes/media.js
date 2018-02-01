@@ -1,14 +1,18 @@
 //es el componente minimo de las playlist
 //el coso donde se ven las imagenes del video
 //importar componente de react
-import React,{Component} from 'react';
+// import React,{Component} from 'react';
+//pure component, pure component tiene should component update del ciclo de vida(ward)
+//se usa cuando va a actualizar varias veces un componente, mejora rendimiento(boton play)
+import React, {PureComponent} from 'react';
 //importar hoja de estilos
 import './media.css'
 //importar propTypes(si no vienen las propiedades que son de los componenetes)
 import propTypes from 'prop-types'
 //se puede escribir componente en 3 modos
+// class Media extends Component{
 //funcional, puro, componente de estado
-class Media extends React.Component{
+class Media extends PureComponent{
     //para enlazar evento con media con ecmascript 6
     // constructor(props){
     //     //herencia
@@ -63,6 +67,7 @@ class Media extends React.Component{
             // <div style={styles.container}>
             //tambien se puede usar el css
             // para enlazar el evento que se quiere hacer se hace con onClick={this.handleClicl(manejador)}
+            //<div>
             <div  className="Media-cover" onClick={this.handleClick} >
             {/* className="Media" className="Media:hover" */}
                 <div>
@@ -81,18 +86,22 @@ class Media extends React.Component{
                     {/* this.props.title asi nos aseguramos que venga el valor de afuera*/}
                      <div className="Media-title" >{this.props.title}</div>
 
-                    <div className="Media-author" className="center align">
-                        {/* state si es mutable, a diferente de props(propiedades de componente) */}
-                        {/* si vamos a usar state se pone this.state.author */}
-                        <p>{this.props.author}</p>
+                    {/* state si es mutable, a diferente de props(propiedades de componente) */}
+                    {/* si vamos a usar state se pone this.state.author */}
+                    <div className="center align"> 
+                        <div className="Media-author"> {this.props.author}</div>
                     </div>
-                    {/* aqui hace parte casi todo de la libreria de materialize descargada en index.html */}
+                       
+                       
+                     
+                    {/* aqui hace parte casi todo de la libreria de materialize descargada en index.html 
                     <div className="card-action center align">
                         <a className="waves-effect waves-light btn" href="#">{this.props.btonTxt}</a>
-                    </div>
+                    </div> */}
                     
                 </div>
             </div>
+            // </div>
         )
     }
 }

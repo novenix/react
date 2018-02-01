@@ -1,12 +1,33 @@
 .Playlist {
-    overflow-x: auto;
-    width: 700px;
-    /* white-space: nowrap; */
-    display: flex;
+    /* overflow-x: auto; */
+    width: 1070px;
+    white-space: nowrap;
+    /* display: flex; */
     /* flex-wrap: wrap; */
-    height: 290px;
+    height: 235px;
     margin-left: 0px;
     background: rgb(255, 255, 255);
     overflow-y: hidden;
     padding-bottom: 80px;
+
+  }
+  .Playlist::-webkit-scrollbar  {
+    width:5px;
+    height: 7px;
+  }
+  .Playlist::-webkit-scrollbar-button{
+    width:0px;
+    height: 0px;
+  }
+  .Playlist::-webkit-scrollbar-thumb{
+    background-color: rgba(197, 209, 209, 0.459);
+  }
+  .Playlist::-webkit-scrollbar-thumb:hover{
+    background-color: rgba(197, 209, 209, 0.247);
+  }
+  .Playlist::-webkit-scrollbar-track{
+    background-color: transparent;
+  }
+  .Playlist::-webkit-scrollbar-track:hover{
+    background-color: rgba(192, 102, 29, 0);
   }
