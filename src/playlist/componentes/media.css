@@ -20,13 +20,14 @@
   .Media-cover {
     
     /* cursor: pointer; */
-    margin-right: 15px;
+    margin-right: 1px;
     display: inline-block;
     width: 260px;
     height: 265px;
     vertical-align: top;
     transition: .3s;
-    box-shadow: 0 0 20px rgba(20, 131, 85, 0.3);
+    box-shadow: 0 0 20px rgba(108, 141, 127, 0.527);
+    background: #a9afb94d
     
   }
   

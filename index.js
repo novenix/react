@@ -6,8 +6,10 @@ import React from 'react'
 //import ReactDOM from 'react-dom'
 //tambien se puede importar {render} de react dom para solo usar render 
 import {render} from 'react-dom'
-//importar componente de video
-import Media from './src/playlist/componentes/media'
+//importar componente playlist
+import Playlist from './src/playlist/componentes/playlist.js'
+//importar los datos de los videos, para lectura desde json(objetos)
+import data from './src/api.json'
 // importar html
 const app=document.getElementById('app')
 //crear lugar de dom en el html el id llamarlo en 
@@ -17,4 +19,8 @@ const app=document.getElementById('app')
 //lo que se va  arenderizar puede ser un elemento de react o un componente de react
 //ReactDOM.render(rend,app)
 //para solo llamar render solo se debe escribir render
-render(<Media/>,app)
+//se pueden tener propiedades y enviarla
+//si llega un audio o video se pone type="video"
+//render(<Media type="video" title='Mi Primer video Nove-video' author="Nicolas Torres" image="./images/covers/logo-og.png" btonTxt="entrar"/>,app)
+//ir a componente que tenga media con toda la playlist y renderize
+render(<Playlist data={data}/>,app)
