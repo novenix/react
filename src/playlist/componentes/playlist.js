@@ -5,6 +5,11 @@
 import React from 'react';
 import Media from './media.js'
 import './playlist.css'
+import Play from '../../icons/components/play'
+import Full from '../../icons/components/full-screen'
+import Pause from '../../icons/components/pause'
+import Volume from '../../icons/components/volume'
+
 //componente funcional:es en una funcion, es mejor que una clase porque no hay
 //que usar render, no tiene un ciclo de vida
 // function Playlist(props){
@@ -24,6 +29,30 @@ function Playlist(props) {
         return (
             //llamar el estilo que se quiere para la playlist, la clase del css se llama playlist
             <div className='Playlist' >
+            <Play
+                // a play se le pasan las propiedades que se quieren que van al componente play que hereda de icon
+                size={20}
+                color='red'
+
+                />
+            <Full
+                // a play se le pasan las propiedades que se quieren que van al componente play que hereda de icon
+                size={20}
+                color='red'
+
+                />
+             <Pause
+                // a play se le pasan las propiedades que se quieren que van al componente play que hereda de icon
+                size={20}
+                color='red'
+
+                />
+            <Volume
+                // a play se le pasan las propiedades que se quieren que van al componente play que hereda de icon
+                size={20}
+                color='red'
+
+            />
             {
                 // mapear cada elemento de la playlist y hacer componentes
                 playlist.map((item)=>{

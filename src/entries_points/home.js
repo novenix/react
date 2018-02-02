@@ -7,12 +7,14 @@ import React from 'react'
 //tambien se puede importar {render} de react dom para solo usar render 
 import {render} from 'react-dom'
 //importar componente playlist
-import Playlist from './src/playlist/componentes/playlist.js'
+// import Playlist from './src/playlist/componentes/playlist.js'
+import Home from '../pages/containers/home'
 //importar los datos de los videos, para lectura desde json(objetos)
-import data from './src/api.json'
-import Categorias from './src/categorias/categorias'
+// import data from './src/api.json'
+// import Categorias from './src/categorias/categorias'
 // importar html
 const app=document.getElementById('app')
+//home solo renderiza container home
 //crear lugar de dom en el html el id llamarlo en 
 //parametros:(que voy a renderizar , donde lo hare)
 //rends= es lo que se va a renderizar
@@ -24,5 +26,5 @@ const app=document.getElementById('app')
 //si llega un audio o video se pone type="video"
 //render(<Media type="video" title='Mi Primer video Nove-video' author="Nicolas Torres" image="./images/covers/logo-og.png" btonTxt="entrar"/>,app)
 //ir a componente que tenga media con toda la playlist y renderize
-render(<Playlist data={data}/>,app)
+render(<Home />,app)
 // render(<Categorias data={data}/>,app)

@@ -17,7 +17,7 @@ module.exports = (env) => {
   return {
 
     entry: {
-      "nove-video": path.resolve(__dirname, 'index.js'),
+      "home": path.resolve(__dirname, 'src/entries_points/home.js'),
     },
     output: {
       path: path.resolve(__dirname, 'dist'),
