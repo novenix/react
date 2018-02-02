@@ -20,10 +20,10 @@
     height: 0px;
   }
   .Playlist::-webkit-scrollbar-thumb{
-    background-color: rgba(197, 209, 209, 0.459);
+    background-color: rgba(97, 105, 105, 0.623);
   }
   .Playlist::-webkit-scrollbar-thumb:hover{
-    background-color: rgba(197, 209, 209, 0.247);
+    background-color: rgba(99, 107, 107, 0.247);
   }
   .Playlist::-webkit-scrollbar-track{
     background-color: transparent;

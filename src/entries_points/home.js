@@ -10,7 +10,7 @@ import {render} from 'react-dom'
 // import Playlist from './src/playlist/componentes/playlist.js'
 import Home from '../pages/containers/home'
 //importar los datos de los videos, para lectura desde json(objetos)
-// import data from './src/api.json'
+ import data from './../api.json'
 // import Categorias from './src/categorias/categorias'
 // importar html
 const app=document.getElementById('app')
@@ -26,5 +26,5 @@ const app=document.getElementById('app')
 //si llega un audio o video se pone type="video"
 //render(<Media type="video" title='Mi Primer video Nove-video' author="Nicolas Torres" image="./images/covers/logo-og.png" btonTxt="entrar"/>,app)
 //ir a componente que tenga media con toda la playlist y renderize
-render(<Home />,app)
+render(<Home data={data}/>,app)
 // render(<Categorias data={data}/>,app)

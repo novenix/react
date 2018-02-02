@@ -5,10 +5,6 @@
 import React from 'react';
 import Media from './media.js'
 import './playlist.css'
-import Play from '../../icons/components/play'
-import Full from '../../icons/components/full-screen'
-import Pause from '../../icons/components/pause'
-import Volume from '../../icons/components/volume'
 
 //componente funcional:es en una funcion, es mejor que una clase porque no hay
 //que usar render, no tiene un ciclo de vida
@@ -24,38 +20,15 @@ function Playlist(props) {
         //no hay ciclo de vida aca, es mejor el componente funcional
     
         //renderizar solo 1 categoria del api.json, el .playlist es el playlist de el api.json
-        const playlist=props.data.categories[0].playlist
-        console.log(props.data)
+        // const playlist=props.data.categories[0].playlist
+        // console.log(props.data)
         return (
             //llamar el estilo que se quiere para la playlist, la clase del css se llama playlist
             <div className='Playlist' >
-            <Play
-                // a play se le pasan las propiedades que se quieren que van al componente play que hereda de icon
-                size={20}
-                color='red'
-
-                />
-            <Full
-                // a play se le pasan las propiedades que se quieren que van al componente play que hereda de icon
-                size={20}
-                color='red'
-
-                />
-             <Pause
-                // a play se le pasan las propiedades que se quieren que van al componente play que hereda de icon
-                size={20}
-                color='red'
-
-                />
-            <Volume
-                // a play se le pasan las propiedades que se quieren que van al componente play que hereda de icon
-                size={20}
-                color='red'
-
-            />
+            
             {
                 // mapear cada elemento de la playlist y hacer componentes
-                playlist.map((item)=>{
+                props.playlist.map((item)=>{
                     //pasar los datos a media
                     //a key se le debe poner un valor dinamico, el id de cada elemento que trae
                     //ecma anterior

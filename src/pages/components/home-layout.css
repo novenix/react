@@ -1,0 +1,10 @@
+body{
+    margin:0px;
+    font-family: fantasy;
+    background: rgb(42, 111, 201)
+}
+.HomeLayout{
+    display:flex;
+    margin-left:0px;
+    min-height:100vh
+}
