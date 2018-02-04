@@ -13,7 +13,7 @@ import Home from '../pages/containers/home'
  import data from './../api.json'
 // import Categorias from './src/categorias/categorias'
 // importar html
-const app=document.getElementById('app')
+const homeContainer=document.getElementById('home-container')
 //home solo renderiza container home
 //crear lugar de dom en el html el id llamarlo en 
 //parametros:(que voy a renderizar , donde lo hare)
@@ -26,5 +26,5 @@ const app=document.getElementById('app')
 //si llega un audio o video se pone type="video"
 //render(<Media type="video" title='Mi Primer video Nove-video' author="Nicolas Torres" image="./images/covers/logo-og.png" btonTxt="entrar"/>,app)
 //ir a componente que tenga media con toda la playlist y renderize
-render(<Home data={data}/>,app)
+render(<Home data={data}/>,homeContainer)
 // render(<Categorias data={data}/>,app)
