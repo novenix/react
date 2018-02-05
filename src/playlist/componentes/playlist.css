@@ -6,6 +6,7 @@
     /* flex-wrap: wrap; */
     height: 235px;
     margin-left: 0px;
+    margin-right: 1000000px;
     background: rgb(255, 255, 255);
     overflow-y: hidden;
     padding-bottom: 80px;

@@ -11,8 +11,12 @@ function Category(props){
             {/* // llama a playlist para que haga lo suyo */}
             {/* //la playlist tiene su propio iterador, le envio playlist para que itere sobre si misma */}
             <Playlist
+            // pasar el click
+            handleOpenModal={props.handleOpenModal}
             // el playlist del props corresponde al api.json
-            playlist ={props.playlist} />
+            playlist ={props.playlist}
+            
+            />
                 
 
         </div>

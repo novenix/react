@@ -25,6 +25,8 @@ const homeContainer=document.getElementById('home-container')
 //se pueden tener propiedades y enviarla
 //si llega un audio o video se pone type="video"
 //render(<Media type="video" title='Mi Primer video Nove-video' author="Nicolas Torres" image="./images/covers/logo-og.png" btonTxt="entrar"/>,app)
-//ir a componente que tenga media con toda la playlist y renderize
+//ir a componente
+// que tenga media con toda la playlist y renderize
+// renderizado con react Dom
 render(<Home data={data}/>,homeContainer)
 // render(<Categorias data={data}/>,app)

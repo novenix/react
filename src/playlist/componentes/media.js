@@ -68,7 +68,7 @@ class Media extends PureComponent{
             //tambien se puede usar el css
             // para enlazar el evento que se quiere hacer se hace con onClick={this.handleClicl(manejador)}
             //<div>
-            <div  className="Media-cover" onClick={this.handleClick} >
+            <div  className="Media-cover" onClick={this.props.handleClick} >
             {/* className="Media" className="Media:hover" */}
                 <div>
                     <div className="Media-image" >

@@ -6,9 +6,17 @@ import Categories from '../../categories/components/categories'
 import Related from '../components/related'
 import ModalContainer from '../../widgets/containers/modal'
 import Modal from '../../widgets/components/modal'
+import HandleError from '../../errores/container/handleError'
+
 class Home extends Component{
     state = {
-        modalVisible:true,
+        modalVisible:false,
+        
+    }
+    handleOpenModal=()=>{
+        this.setState({
+            modalVisible:true,
+        })
     }
     handleCloseModalClick = (event)=>{
         
@@ -18,27 +26,40 @@ class Home extends Component{
             modalVisible:false,
         })
     }
+    
     render(){
+        // manejar los errorres de todo el home layout
+        
         return(
-            <HomeLayout>
-                
-                {/* hijos del home */}
-                <Categories categories={this.props.data.categories} />
-                
-                <Related/>
-                {/* contenedor modal */}
-                {/* jsx condicionales */}
-                {
-                    this.state.modalVisible &&                
-                    <ModalContainer>
-                        <Modal 
-                            handleClick={this.handleCloseModalClick}
-                        >
-                            <h1>esto es un portal</h1>
-                        </Modal>                    
-                    </ModalContainer>
-                }
-            </HomeLayout>
+            <HandleError>
+                <HomeLayout>
+                    
+                    {/* hijos del home */}
+                    <Categories 
+                        
+                        // categories={this.props.data}
+                        categories={this.props.data.categories}
+
+                        // {/* pasamos el click */}
+                        handleOpenModal={this.handleOpenModal}
+                        />
+                    
+                    
+                    <Related/>
+                    {/* contenedor modal */}
+                    {/* jsx condicionales */}
+                    {
+                        this.state.modalVisible &&                
+                        <ModalContainer>
+                            <Modal 
+                                handleClick={this.handleCloseModalClick}
+                            >
+                                <h1>esto es un portal</h1>
+                            </Modal>                    
+                        </ModalContainer>
+                    }
+                </HomeLayout>
+            </HandleError>
         )
     }
 }
