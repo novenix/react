@@ -7,7 +7,7 @@ import Related from '../components/related'
 import ModalContainer from '../../widgets/containers/modal'
 import Modal from '../../widgets/components/modal'
 import HandleError from '../../errores/container/handleError'
-
+import VideoPlayer from '../../player/container/video-player'
 class Home extends Component{
     state = {
         modalVisible:false,
@@ -46,6 +46,8 @@ class Home extends Component{
                     
                     
                     <Related/>
+                    {/* reproductor de video */}
+                    <VideoPlayer/>
                     {/* contenedor modal */}
                     {/* jsx condicionales */}
                     {

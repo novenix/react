@@ -25,7 +25,7 @@ const Search = (props) =>(
             onChange={props.handleChange}
             // manipular el value para poner en vez de espacios, guines para buscar:hola pepe=>hola-pepe
             value={props.value}
-            defaultValue='luis fonsi'
+            // defaultValue='luis fonsi'
         />
     </form>
 )
