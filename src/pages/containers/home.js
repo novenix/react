@@ -33,7 +33,9 @@ class Home extends Component{
         return(
             <HandleError>
                 <HomeLayout>
-                    
+                    <VideoPlayer
+                        autoplay
+                    />
                     {/* hijos del home */}
                     <Categories 
                         
@@ -47,7 +49,7 @@ class Home extends Component{
                     
                     <Related/>
                     {/* reproductor de video */}
-                    <VideoPlayer/>
+                    
                     {/* contenedor modal */}
                     {/* jsx condicionales */}
                     {

@@ -12,7 +12,7 @@ module.exports = {
     port: 9000,
   },
   // saber en que punto se dañò exactamente el codigo
-  devtool:'eval-source-map',
+  devtool:'inline-source-map',
   module: {
     rules: [
       {

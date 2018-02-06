@@ -1,4 +1,4 @@
-import React from 'React'
+import React from 'react'
 import './modal.css'
 function Modal(props){
     return (
