@@ -27,6 +27,11 @@ class VideoPlayer extends Component{
             duration:this.video.duration
         })
     }
+    handleTimeUpdate=event =>{
+        console.log(this.video.currentTime)
+        // pasarselo a un estado
+        this.setState
+    }
     render(){
         return (
             
@@ -50,6 +55,7 @@ class VideoPlayer extends Component{
                         // envia estado a video, el componente del video envia todo, hasta tiempo transcurrido
                         pause={this.state.pause}
                         handleLoadedMetadata={this.handleLoadedMetadata}
+                        handleTimeUpdate={this.handleTimeUpdate}
                         src="http://download.blender.org/peach/bigbuckbunny_movies/BigBuckBunny_320x180.mp4" 
                     /> 
                 </VideoPlayerLayout>
