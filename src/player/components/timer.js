@@ -6,7 +6,8 @@ function Timer (props){
         <div className='Timer' >
             <p>
                 {/* tiempo transcurrido vs duracion */}
-                <span>00/{props.duration}</span>
+                {/* se envia el tiempo para formatear de la duracion y del tiempo actual */}
+                <span>{ props.currentTime}/{props.duration}</span>
             </p>
         </div>
     )

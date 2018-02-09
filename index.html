@@ -3,7 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <!-- el segundo href se borra cuando haba build de desarrollo -->
+    <link rel="stylesheet"   >
+   
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Nove Video</title>
@@ -13,6 +15,9 @@
     <div id="home-container"></div>
     <!-- un modal aparte -->
     <div id='modal-container'></div>
+    <!-- build:dev -->
     <script src="http://localhost:9000/js/home.js" ></script>
+    <!-- build:prod -->
+        <!-- <script src="./dist/js/home.6f39eb4a69a58928e2ed.js" ></script> -->
 </body>
 </html>

@@ -34,7 +34,7 @@ function Playlist(props) {
                     //ecma anterior
                     // return <Media title={item.title} author={item.author} image={item.cover} btonTxt="agregar a playlist" key={item.id} type={item.type} />
                     // ecma actual: con{...item} envia como propiedad a media cada atributo que tiene el objeto
-                    return <Media handleClick={props.handleOpenModal} {...item} key={item.id} />
+                    return <Media openModal={props.handleOpenModal} {...item} key={item.id} />
                     
                 })    
             }

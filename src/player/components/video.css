@@ -1,7 +1,18 @@
 .Video{
+    width: 700px;
+    height: 700px; 
+    /* height: 1000px;  */
+ } 
+.Video video{ 
+    width: auto;
+    top:10px; 
+    /* size: 1300px;  */
+    vertical-align:top; 
+ } 
+/* .Video {
     width: inherit;
-}
-.Video video{
+  }
+  .Video video {
     width: inherit;
     vertical-align: middle;
-}
+  } */

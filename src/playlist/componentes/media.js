@@ -28,19 +28,21 @@ class Media extends PureComponent{
         author:this.props.author
     }
     // //manejar evento de click ya enlazado con ecma 6
-    // handleClick(event){
-    //     console.log(event)
-    //     console.log(this.props.title)
-    // }
-    /////////con ecmascript 7
     handleClick=(event)=>{
-        //console.log(this.props.image)
-        //para modificar el estado del author (cambiar el valor)
-        this.setState({
-            // pasar los valores que quiere cambiar
-            author:'pepe Pretzel' 
-        })
+        // console.log(event)
+        // console.log(this.props.title)
+        // le enviamos el titulo, cover autor
+        this.props.openModal(this.props)
     }
+    /////////con ecmascript 7
+    // handleClick=(event)=>{
+    //     //console.log(this.props.image)
+    //     //para modificar el estado del author (cambiar el valor)
+    //     this.setState({
+    //         // pasar los valores que quiere cambiar
+    //         author:'pepe Pretzel' 
+    //     })
+    // }
     //extender componentes de react para los porpios
     //tiene adentro la forma del html
     //JSX: sintaxis de react para construir elementos
@@ -68,7 +70,7 @@ class Media extends PureComponent{
             //tambien se puede usar el css
             // para enlazar el evento que se quiere hacer se hace con onClick={this.handleClicl(manejador)}
             //<div>
-            <div  className="Media-cover" onClick={this.props.handleClick} >
+            <div  className="Media-cover" onClick={this.handleClick} >
             {/* className="Media" className="Media:hover" */}
                 <div>
                     <div className="Media-image" >

@@ -27,6 +27,8 @@ class Video extends Component{
         const {
             handleLoadedMetadata,
             handleTimeUpdate,
+            handleSeeking,
+            handleSeeked,
         }=this.props;
         
         return (
@@ -39,6 +41,10 @@ class Video extends Component{
                     // barra duracion del video
                     onLoadedMetadata={handleLoadedMetadata}
                     onTimeUpdate={handleTimeUpdate}
+                    // moviendo la parte de video, cuando se empieza a cargar, para poner el spinner
+                    onSeeking={handleSeeking}
+                    // ya recibio el movimiento, para quitar el cargando
+                    onSeeked={handleSeeked}
                 />
             </div>
         )
